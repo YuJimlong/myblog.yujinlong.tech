@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Alon</title>
+    <link>/</link>
+    <description>Recent content on Alon</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Yu Jinlong</copyright>
+    <lastBuildDate>Tue, 02 Oct 2018 00:00:00 +0000</lastBuildDate>
+    
+        <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>BLAST: build your own blast on your laptop</title>
+      <link>/post/blast-build-your-own-blast-on-your-laptop/</link>
+      <pubDate>Tue, 02 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/blast-build-your-own-blast-on-your-laptop/</guid>
+      
+        <description>&lt;p&gt;&lt;strong&gt;B&lt;/strong&gt;asic &lt;strong&gt;L&lt;/strong&gt;ocal &lt;strong&gt;A&lt;/strong&gt;lignment &lt;strong&gt;S&lt;/strong&gt;earch &lt;strong&gt;T&lt;/strong&gt;ool  (&lt;a href=&#34;https://blast.ncbi.nlm.nih.gov/Blast.cgi&#34;&gt;BLAST&lt;/a&gt;)  is one of the most commonly used bioinformatic software for researchers in the filed of biology and medicine.&lt;br /&gt;
+It is very useful to find homology of a specific sequence, be it AA(amino acid) or NT(nucliotide) sequence.&lt;br /&gt;
+However, most of the users don&amp;rsquo;t know that BLAST can be installed under their personal computer.&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;h1 id=&#34;how-to-install&#34;&gt;How to install&lt;/h1&gt;
+
+&lt;p&gt;First, make sure you have installed &lt;strong&gt;conda&lt;/strong&gt; in your computer.&lt;br /&gt;
+Just type the following codes in you terminal, conda will perform all the task for you.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;conda install -y blast
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&#34;to-build-a-database-for-query&#34;&gt;To build a database for query&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code&gt;makeblastdb -in Os.fa -dbtype prot -title Os_protein -parse_seqids -out Os_pro_db
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;-in&lt;/code&gt; is the input file, it is a collection of fasta sequence that you want to make into a database for query latter.&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-title&lt;/code&gt; is the name of the database, you will use them when make query later.&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-out&lt;/code&gt; is the output file name, we don&amp;rsquo;t deal with the file most of the time, so just give the same file name with the &lt;strong&gt;title&lt;/strong&gt;.&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;make-a-query&#34;&gt;Make a query&lt;/h1&gt;
+
+&lt;p&gt;Query is also known as alignment.&lt;br /&gt;
+It&amp;rsquo;s the proccess of aligning the query sequence to the whole database that you build before.&lt;br /&gt;
+Blast have serveral types of query mode&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;blastn:Nucleotide-Nucleotide&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;blastx:Translated Query-Protein Subject&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;blastp:Protein-Protein&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;tblastn:Protein Query-Translated Subject&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;tblastx:Translated Query-Translated Subject&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;take the most used blastn for example&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;blastn -query query_sequence.fna -db your_database_title -out test.out -evalue 0.001 -outfmt 6
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt; -outfmt &amp;lt;String&amp;gt;
+   alignment view options:
+     0 = Pairwise,
+     1 = Query-anchored showing identities,
+     2 = Query-anchored no identities,
+     3 = Flat query-anchored showing identities,
+     4 = Flat query-anchored no identities,
+     5 = BLAST XML,
+     6 = Tabular,
+     7 = Tabular with comment lines,
+     8 = Seqalign (Text ASN.1),
+     9 = Seqalign (Binary ASN.1),
+    10 = Comma-separated values,
+    11 = BLAST archive (ASN.1),
+    12 = Seqalign (JSON),
+    13 = Multiple-file BLAST JSON,
+    14 = Multiple-file BLAST XML2,
+    15 = Single-file BLAST JSON,
+    16 = Single-file BLAST XML2,
+    17 = Sequence Alignment/Map (SAM),
+    18 = Organism Report
+&lt;/code&gt;&lt;/pre&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Bioconda: A package management center for Linux</title>
+      <link>/post/bioconda-a-package-management-center-for-linux/</link>
+      <pubDate>Tue, 02 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/bioconda-a-package-management-center-for-linux/</guid>
+      
+        <description>&lt;p&gt;For greenhands in bioinformatics, the biggest challenge is to install bioinformatic software in the Linux system.&lt;br /&gt;
+Here comes &lt;strong&gt;bioconda&lt;/strong&gt;, a software that resolve most of the difficulty for beginners when dealing with bioinformatic software.&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;h1 id=&#34;how-to-install&#34;&gt;How to install&lt;/h1&gt;
+
+&lt;p&gt;Open your bash, type the following&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;wget https://repo.continuum.io/miniconda/Miniconda2-latest-Linux-x86_64.sh 
+bash Miniconda2-latest-Linux-x86_64.sh 
+source ~/.bashrc
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&#34;add-channels&#34;&gt;Add channels&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code&gt;conda config --add channels conda-forge
+conda config --add channels defaults
+conda config --add channels r
+conda config --add channels bioconda
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/bioconda/
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&#34;usage&#34;&gt;Usage&lt;/h1&gt;
+
+&lt;p&gt;All of the software are installed under the directory:  &lt;code&gt;~/miniconda2/bin/&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;conda install -y bwa
+# conda will automatically install the latest version if you don&#39;t specify the version number.  
+conda install -y bwa=0.7.15
+# if you wanna a specified version, you should type the software name like this.  
+conda install -y hmer2 htseq htslib igvtools  
+# a list of software can be installed simultaneaously.  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&#34;creat-an-environment&#34;&gt;Creat an environment&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code&gt;conda  create  -n  aligners
+# now we have a environment named &amp;quot;aligners&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&#34;activate-your-environment&#34;&gt;Activate your environment&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code&gt;source avtivete aligners  
+conda install -y hisat2  
+#  all of the software are installed under the directory :$HOME/miniconda2/envs/aligners/bin/
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&#34;quit-your-environment&#34;&gt;Quit your environment&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code&gt;source deactivate 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&#34;other-usage&#34;&gt;Other usage&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code&gt;conda list 
+# list all the installed packages  
+conda uninstall star
+conda remove star  
+# uninstall the software.  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;for detailed information
+&lt;a href=&#34;http://blog.sciencenet.cn/blog-2970729-1074395.html&#34;&gt;a guidance for conda usage&lt;/a&gt;
+&lt;a href=&#34;https://mp.weixin.qq.com/s?__biz=MzI2MjA1MDQxMg==&amp;amp;mid=2649707327&amp;amp;idx=1&amp;amp;sn=3dd608d5ac32725bfbc44563e961442c&amp;amp;chksm=f24af43cc53d7d2af7aaf9073f846753fbd92267b858a53f1be0bd8bd45115636a8857c1b001&amp;amp;scene=21#wechat_redirect&#34;&gt;a guidance for conda installation&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Hello Shanghai</title>
+      <link>/post/hello-shanghai/</link>
+      <pubDate>Tue, 02 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/hello-shanghai/</guid>
+      
+        <description>&lt;blockquote&gt;
+&lt;p&gt;Since 2018/08/15, I have been in Shanghai for 45 Days. Some thoughts in my mind are begining to change.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;is-shanghai-really-a-good-choice-for-me&#34;&gt;Is Shanghai really a good choice for me?&lt;/h1&gt;
+
+&lt;p&gt;As a people living in Wenzhou for nearly 20 years, I decided to move to shanghai for better education and, maybe in the future, better salary.&lt;br /&gt;
+As for better salary, I have to admit that Shanghai never fail to meet my expectation. The first day I came to shanghai, I received 5000 yuan for my 4-week internship in the BIOHARMONY.&lt;br /&gt;
+However, as for research &amp;amp; education, the 6th people&amp;rsquo;s hospital(I am studying at the hospital) is totally not a good choice. You know in Whenzhou, when I was an undergraduate student, my tutor has her own lab, that means we can carry the experiments whenever we want, but things here are totally different. A lot of my elder seniors have to use labs that is public or even owned by other research team. This kind of situation largely limit our freedom in doing research.&lt;br /&gt;
+Luckily, a new lab building is under construction. In that way, my worries should have been removed in the future.&lt;/p&gt;
+
+&lt;h1 id=&#34;i-wanna-talk-about-my-roommates&#34;&gt;I wanna talk about my roommates&lt;/h1&gt;
+
+&lt;p&gt;Our dormitory accommodates 6 students, all of us come from different part of China. Though sometimes we have cultural differences, we can get along well most of the time.&lt;/p&gt;
+
+&lt;h1 id=&#34;the-public-showring-room-is-what-i-cannot-accept-at-the-begining&#34;&gt;The public showring room is what I CANNOT accept at the begining.&lt;/h1&gt;
+
+&lt;p&gt;People from Southern China always use private bathroom, that means you take shower in a private space, however, it&amp;rsquo;s common for Northern Chinese to take shower in a public space(with all the faucet collected in a large room.). Usually shanghai people are prone to take shower in a private bathroom. Nevertheless, because of the roaring housing price, our school cannot afford us a private bathroom, instead, I have to take shower in a public shower room. At first, I cannot accept everyone stand next to each other without a piece of clothe. But gradually, it&amp;rsquo;s not a big deal in my opinion.&lt;br /&gt;
+I&amp;rsquo;m very glad that I can finnaly be so brave to stand nakedly in front of a crowd of people without feeling embarassed.&lt;/p&gt;
+
+&lt;h1 id=&#34;about-the-food-in-shanghai&#34;&gt;About the food in shanghai&lt;/h1&gt;
+
+&lt;p&gt;Up to now, I have my meal in Student Canteen most of the time. But it&amp;rsquo;s obvious that food price here is more expensive than price in Whenzhou.&lt;br /&gt;
+The same kind of meal in Whenzhou is only worth approximately 9-10RMB while here it&amp;rsquo;s sold 12-14RMB.&lt;br /&gt;
+This high price phenomenon is within my expectation because people in this city receive a higher salary.&lt;/p&gt;
+
+&lt;h1 id=&#34;the-pace-of-my-life&#34;&gt;The pace of my life&lt;/h1&gt;
+
+&lt;p&gt;Every students here seems not as hardworking as student in WMU.(No wonder people say WMU is famous for her diligent students.)&lt;br /&gt;
+I officially came to my university on 2018-09-08 and it has been 3 weeks.&lt;br /&gt;
+Look back into the days I have spend, it seems, most of the time, I was playing basketball, playing e-games or celebrating something.&lt;br /&gt;
+To be honest, it makes my feel really guilty.&lt;/p&gt;
+
+&lt;h1 id=&#34;my-plan-for-the-future&#34;&gt;My plan for the future&lt;/h1&gt;
+
+&lt;p&gt;Maybe write a big paper and find a job in shanghai.&lt;br /&gt;
+Buy a house.&lt;br /&gt;
+Find a ***.&lt;/p&gt;</description>
+      
+    </item>
+    
+  </channel>
+</rss>
