@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Annotation on Alon</title>
+    <link>/tags/annotation/</link>
+    <description>Recent content in Annotation on Alon</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Yu Jinlong</copyright>
+    <lastBuildDate>Thu, 04 Oct 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/annotation/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Prokka: prokaryotic genome annotation</title>
+      <link>/post/prokka-prokaryotic-genome-annotation/</link>
+      <pubDate>Thu, 04 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/prokka-prokaryotic-genome-annotation/</guid>
+      <description>&lt;p&gt;Prokka is a fast and accurate prokaryotic genome annotation system under UNIX platform.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

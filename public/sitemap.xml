@@ -3,6 +3,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>/post/life-is-not-as-easy-as-you-think/</loc>
+    <lastmod>2018-10-04T09:32:21+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/prokka-prokaryotic-genome-annotation/</loc>
+    <lastmod>2018-10-04T09:58:52+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>/post/blast-build-your-own-blast-on-your-laptop/</loc>
     <lastmod>2018-10-02T20:37:36+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -25,7 +39,14 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2018-10-02T20:37:36+08:00</lastmod>
+    <lastmod>2018-10-04T09:32:21+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/annotation/</loc>
+    <lastmod>2018-10-04T09:58:52+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -38,20 +59,21 @@
   
   <url>
     <loc>/categories/linux/</loc>
-    <lastmod>2018-10-02T20:37:36+08:00</lastmod>
+    <lastmod>2018-10-04T09:58:52+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/post/</loc>
-    <lastmod>2018-10-02T20:37:36+08:00</lastmod>
+    <lastmod>2018-10-04T09:32:21+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/</loc>
+    <lastmod>2018-10-04T09:58:52+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>

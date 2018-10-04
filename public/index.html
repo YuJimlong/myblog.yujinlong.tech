@@ -61,7 +61,7 @@
 <meta property="og:description" content="Hugo theme jane example site." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="/" />
-<meta property="og:updated_time" content="2018-10-02T00:00:00&#43;00:00"/>
+<meta property="og:updated_time" content="2018-10-04T00:00:00&#43;00:00"/>
 
 <meta itemprop="name" content="Alon">
 <meta itemprop="description" content="Hugo theme jane example site.">
@@ -283,6 +283,64 @@
     
       <article class="post bg-white">
   <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/life-is-not-as-easy-as-you-think/">Life is not as easy as you think</a></h1>
+    
+    <div class="post-meta">
+      <span class="post-time"> 2018-10-04 </span>
+      
+      
+      
+      
+    </div>
+  </header>
+  
+  <div class="post-content">
+    
+    <div class="post-summary">
+      <p>After I came to shanghai, I made a lot of friends. In my impression, students that are able to be admitted to Shanghai Jiaotong university are either talented or diligent.
+</p>
+    </div>
+    <div class="read-more">
+      <a href="/post/life-is-not-as-easy-as-you-think/" class="read-more-link">Read more</a>
+    </div>
+    
+  </div>
+</article>
+
+    
+      <article class="post bg-white">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/prokka-prokaryotic-genome-annotation/">Prokka: prokaryotic genome annotation</a></h1>
+    
+    <div class="post-meta">
+      <span class="post-time"> 2018-10-04 </span>
+      <div class="post-category">
+          <a href="/categories/linux/"> Linux </a>
+          
+        </div>
+      
+      
+      
+    </div>
+  </header>
+  
+  <div class="post-content">
+    
+    <div class="post-summary">
+      <p>Prokka is a fast and accurate prokaryotic genome annotation system under UNIX platform.</p>
+
+<p></p>
+    </div>
+    <div class="read-more">
+      <a href="/post/prokka-prokaryotic-genome-annotation/" class="read-more-link">Read more</a>
+    </div>
+    
+  </div>
+</article>
+
+    
+      <article class="post bg-white">
+  <header class="post-header">
     <h1 class="post-title"><a class="post-link" href="/post/blast-build-your-own-blast-on-your-laptop/">BLAST: build your own blast on your laptop</a></h1>
     
     <div class="post-meta">
@@ -293,11 +351,6 @@
         </div>
       
       
-      
-        <span id="/post/blast-build-your-own-blast-on-your-laptop/" class="leancloud_visitors" data-flag-title="BLAST: build your own blast on your laptop">
-          <span class="post-meta-item-text"> | 阅读 </span>
-          <span class="leancloud-visitors-count"></span>
-        </span>
       
     </div>
   </header>
@@ -331,11 +384,6 @@ However, most of the users don&rsquo;t know that BLAST can be installed under th
       
       
       
-        <span id="/post/bioconda-a-package-management-center-for-linux/" class="leancloud_visitors" data-flag-title="Bioconda: A package management center for Linux">
-          <span class="post-meta-item-text"> | 阅读 </span>
-          <span class="leancloud-visitors-count"></span>
-        </span>
-      
     </div>
   </header>
   
@@ -363,11 +411,6 @@ Here comes <strong>bioconda</strong>, a software that resolve most of the diffic
       
       
       
-      
-        <span id="/post/hello-shanghai/" class="leancloud_visitors" data-flag-title="Hello Shanghai">
-          <span class="post-meta-item-text"> | 阅读 </span>
-          <span class="leancloud-visitors-count"></span>
-        </span>
       
     </div>
   </header>
@@ -451,6 +494,10 @@ Here comes <strong>bioconda</strong>, a software that resolve most of the diffic
 
   
   
+    <span id="busuanzi_container">
+      访客数/访问量：<span id="busuanzi_value_site_uv"></span>/<span id="busuanzi_value_site_pv"></span>
+    </span>
+  
 </div>
 
     </footer>
@@ -477,117 +524,10 @@ Here comes <strong>bioconda</strong>, a software that resolve most of the diffic
 
 
 
+  <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 
 
-  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
-  <script type="text/javascript">
-    AV.initialize("oyWiIKBsMD0ODIrsc65zO8sm-gzGzoHsz", "3WHz9rUzavsmou42o07s1WpW");
-  </script>
-
-  <script>
-    function showHitCount(Counter) {
-      var query = new AV.Query(Counter);
-      var entries = [];
-      var $visitors = $(".leancloud_visitors");
-
-      $visitors.each(function () {
-        entries.push($(this).attr("id").trim());
-      });
-
-      query.containedIn('url', entries);
-      query.find()
-        .done(function (results) {
-          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
-
-          if (results.length === 0) {
-            $visitors.find(COUNT_CONTAINER_REF).text(0);
-            return;
-          }
-
-          for (var i = 0; i < results.length; i++) {
-            var item = results[i];
-            var url = item.get('url');
-            var hits = item.get('hits');
-            var element = document.getElementById(url);
-
-            $(element).find(COUNT_CONTAINER_REF).text(hits);
-          }
-          for (var i = 0; i < entries.length; i++) {
-            var url = entries[i];
-            var element = document.getElementById(url);
-            var countSpan = $(element).find(COUNT_CONTAINER_REF);
-            if (countSpan.text() == '') {
-              countSpan.text(0);
-            }
-          }
-        })
-        .fail(function (object, error) {
-          console.log("Error: " + error.code + " " + error.message);
-        });
-    }
-
-    function addCount(Counter) {
-      var $visitors = $(".leancloud_visitors");
-      var url = $visitors.attr('id').trim();
-      var title = $visitors.attr('data-flag-title').trim();
-      var query = new AV.Query(Counter);
-
-      query.equalTo("url", url);
-      query.find({
-        success: function (results) {
-          if (results.length > 0) {
-            var counter = results[0];
-            counter.fetchWhenSave(true);
-            counter.increment("hits");
-            counter.save(null, {
-              success: function (counter) {
-                var $element = $(document.getElementById(url));
-                $element.find('.leancloud-visitors-count').text(counter.get('hits'));
-              },
-              error: function (counter, error) {
-                console.log('Failed to save Visitor num, with error message: ' + error.message);
-              }
-            });
-          } else {
-            var newcounter = new Counter();
-             
-            var acl = new AV.ACL();
-            acl.setPublicReadAccess(true);
-            acl.setPublicWriteAccess(true);
-            newcounter.setACL(acl);
-             
-            newcounter.set("title", title);
-            newcounter.set("url", url);
-            newcounter.set("hits", 1);
-            newcounter.save(null, {
-              success: function (newcounter) {
-                var $element = $(document.getElementById(url));
-                $element.find('.leancloud-visitors-count').text(newcounter.get('hits'));
-              },
-              error: function (newcounter, error) {
-                console.log('Failed to create');
-              }
-            });
-          }
-        },
-        error: function (error) {
-          console.log('Error:' + error.code + " " + error.message);
-        }
-      });
-    }
-
-    $(function () {
-      var Counter = AV.Object.extend("Counter");
-      if ($('.leancloud_visitors').length == 1) {
-        
-        addCount(Counter);
-      } else if ($('.post-link').length > 1) {
-        
-        showHitCount(Counter);
-      }
-    });
-  </script>
 
 
 

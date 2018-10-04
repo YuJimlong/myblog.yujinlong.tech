@@ -7,10 +7,31 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Yu Jinlong</copyright>
-    <lastBuildDate>Tue, 02 Oct 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 04 Oct 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Life is not as easy as you think</title>
+      <link>/post/life-is-not-as-easy-as-you-think/</link>
+      <pubDate>Thu, 04 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/life-is-not-as-easy-as-you-think/</guid>
+      <description>&lt;p&gt;After I came to shanghai, I made a lot of friends. In my impression, students that are able to be admitted to Shanghai Jiaotong university are either talented or diligent.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Prokka: prokaryotic genome annotation</title>
+      <link>/post/prokka-prokaryotic-genome-annotation/</link>
+      <pubDate>Thu, 04 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/prokka-prokaryotic-genome-annotation/</guid>
+      <description>&lt;p&gt;Prokka is a fast and accurate prokaryotic genome annotation system under UNIX platform.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>BLAST: build your own blast on your laptop</title>

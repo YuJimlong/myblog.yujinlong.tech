@@ -7,10 +7,85 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Yu Jinlong</copyright>
-    <lastBuildDate>Tue, 02 Oct 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 04 Oct 2018 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Life is not as easy as you think</title>
+      <link>/post/life-is-not-as-easy-as-you-think/</link>
+      <pubDate>Thu, 04 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/life-is-not-as-easy-as-you-think/</guid>
+      
+        <description>&lt;p&gt;After I came to shanghai, I made a lot of friends. In my impression, students that are able to be admitted to Shanghai Jiaotong university are either talented or diligent.
+&lt;/p&gt;
+
+&lt;h1 id=&#34;of-course-i-am-the-diligent-one&#34;&gt;Of course I am the diligent one.&lt;/h1&gt;
+
+&lt;p&gt;Looking back in my 5-year campus life, I deeply know that I&amp;rsquo;m not a talented students. What I can do is work harder than others.&lt;br /&gt;
+After I came to shanghai, people around me tend to enjoy their life rather than studying hard. And I, of course, am affected.&lt;br /&gt;
+All the good habits acuqired during my campus life have gone. It&amp;rsquo;s obvious that getting rid off a good habit is easier than aquiring it.&lt;br /&gt;
+Although I know all of the secrets leading to success, I cannot control my self. Maybe that is why displine is cherishable.&lt;/p&gt;
+
+&lt;h1 id=&#34;from-now-on-i-promise-to-work-hard-think-big&#34;&gt;From now on, I promise to work hard, think big.&lt;/h1&gt;
+
+&lt;p&gt;I have tried several times to find the best condition of myself. Maybe you don&amp;rsquo;t know, in the past, I stay in the library all day along until 21:30 when the library close.&lt;br /&gt;
+However, things that&amp;rsquo;s going on seem to be wrong and I know I have to make a change.&lt;br /&gt;
+The biggest obstacles in front of me is afraid of being outstanding and  asocial.&lt;br /&gt;
+So, let&amp;rsquo;s face it bravely. If you ignore this problem currently, there will be another problem waiting you in the future.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Prokka: prokaryotic genome annotation</title>
+      <link>/post/prokka-prokaryotic-genome-annotation/</link>
+      <pubDate>Thu, 04 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/prokka-prokaryotic-genome-annotation/</guid>
+      
+        <description>&lt;p&gt;Prokka is a fast and accurate prokaryotic genome annotation system under UNIX platform.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;install&#34;&gt;INSTALL&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code&gt;conda install prokka  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&#34;simple-usage&#34;&gt;Simple Usage&lt;/h1&gt;
+
+&lt;pre&gt;&lt;code&gt;prokka genome.fasta --outdir outputdir 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&#34;details&#34;&gt;Details&lt;/h1&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Prokka is a stand-alone software that connects several packages together.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;For CDS prediction, it uses Prodigal&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;For rRNA prediction, it uses RNAmmer&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;For rRNA prediction, it uses Aragorn&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;For Signal peptides prediction, it uses SignalIP&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;For ncRNA it uses Infernal&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;As a result, if you wanna predict 16srRNA sequence in your genome, don&amp;rsquo;t bother to use RNAmmer if Prokka didn&amp;rsquo;t give you a result. The two packages share the same code.&lt;/p&gt;
+
+&lt;h1 id=&#34;comparing-with-other-platforms&#34;&gt;Comparing with other platforms&lt;/h1&gt;
+
+&lt;p&gt;According to the &lt;a href=&#34;https://academic.oup.com/bioinformatics/article/30/14/2068/2390517&#34;&gt;paper&lt;/a&gt;, prokka produced an overall better annotation than RAST and xBase2.&lt;br /&gt;
+However, according to my experience, RAST sometimes predict annotations that prokka didn&amp;rsquo;t produce, although the output of prokka is more friendly because it provides the gene name while RAST didn&amp;rsquo;t.&lt;br /&gt;
+As a result, I prefer to combine the result of both source.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;for detailed infromation and how it works, please visit &lt;a href=&#34;https://github.com/tseemann/prokka&#34;&gt;github&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+      
+    </item>
     
     <item>
       <title>BLAST: build your own blast on your laptop</title>

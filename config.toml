@@ -85,11 +85,11 @@ defaultContentLanguage = "en"           # Default language to use
     a-email = "mailto:yujinlong@sjtu.edu.cn"
     
   [params.counter.busuanzi]  # a Chinese visitor counter  # 不蒜子计数器
-    enable = false
+    enable = true
   [params.reward]                                         # 文章打赏
     enable = true
     wechat = ""           # 微信二维码
   [params.counter.leancloud]  # Chinese leancloud visitor counter  # leancloud 计数器
-    enable = true
+    enable = false
     appId = "oyWiIKBsMD0ODIrsc65zO8sm-gzGzoHsz"
     appKey = "3WHz9rUzavsmou42o07s1WpW"
